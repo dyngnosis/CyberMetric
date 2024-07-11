@@ -90,10 +90,14 @@ Please evaluate the question and options based on the following criteria:
 3. Sense: Does the question make logical sense?
 4. Answer quality: Are the options clear and do they relate logically to the question?
 5. Correctness: Is there a clear, unambiguous correct answer?
+6. Final assessment: Provide an overall assessment of the question's quality.
+7. Answer: Choose the best answer (A, B, C, or D) based on the options provided.
+
 
 In your evaluation, provide your reasoning for each criterion. Then, flag any issues you've identified using the following tags: <flag_grammar></flag_grammar> <flag_answer_quality></flag_answer_quality>.
 After your detailed evaluation, provide a final assessment of the question's overall quality using one of the following ratings inside <final_assessment> tags: GOOD, NEEDS_IMPROVEMENT, POOR.
 Finally, provide your answer choice (A, B, C, or D) in the format "ANSWER: X", where X is the letter corresponding to the best answer.
+
 Here are two examples of how your response should be structured:
 Example 1 (Good Question):
 Clarity: The question is clear and unambiguous. It asks about a specific cybersecurity concept.
@@ -103,6 +107,7 @@ Answer quality: The options are clear and directly related to the question.
 Correctness: There is a clear, unambiguous correct answer (option B in this case).
 <final_assessment>GOOD</final_assessment>
 ANSWER: B
+
 Example 2 (Poor Question):
 Clarity: The question is ambiguous and poorly worded. <flag_answer_quality>It's unclear what specific aspect of network security is being asked about.</flag_answer_quality>
 Grammar: <flag_grammar>There are grammatical errors in the question, such as missing articles and incorrect verb tense.</flag_grammar>
@@ -110,6 +115,8 @@ Sense: The question doesn't make complete logical sense due to its vague nature.
 Answer quality: <flag_answer_quality>The options are not clearly related to the question and some are too similar, making it difficult to choose a definitive answer.</flag_answer_quality>
 Correctness: Due to the issues mentioned, there is no clear, unambiguous correct answer.
 <final_assessment>POOR</final_assessment>
+ANSWER: B
+
 Begin your evaluation now.
 """
 
@@ -218,8 +225,9 @@ Begin your evaluation now.
 async def main():
     API_KEY = os.getenv("ANTHROPIC_APIKEY")
     #file_paths = ['CyberMetric-80-v1.json', 'CyberMetric-500-v1.json', 'CyberMetric-2000-v1.json', 'CyberMetric-10000-v1.json']
-    file_paths = ['CyberMetric-80-v1.json', 'CyberMetric-500-v1.json']
-    model_ids = ["claude-3-5-sonnet-20240620", "claude-3-haiku-20240307"]
+    file_paths = ['CyberMetric-10000-v1.json']
+    #model_ids = ["claude-3-5-sonnet-20240620", "claude-3-haiku-20240307"]
+    model_ids = ["claude-3-5-sonnet-20240620"]
     
     for file_path in file_paths:
         for model_id in model_ids:
