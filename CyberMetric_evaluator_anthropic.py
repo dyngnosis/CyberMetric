@@ -133,9 +133,10 @@ class AsyncCyberMetricEvaluator:
 
 async def main():
     API_KEY = os.getenv("ANTHROPIC_APIKEY")
-    #file_paths = ['CyberMetric-80-v1.json', 'CyberMetric-500-v1.json', 'CyberMetric-2000-v1.json', 'CyberMetric-10000-v1.json']
-    file_paths = ['CyberMetric-80-v1.json', 'CyberMetric-500-v1.json']
-    model_ids = ["claude-3-5-sonnet-20240620", "claude-3-haiku-20240307"]
+    file_paths = ['questions/CyberMetric-80-v1.json', 'questions/CyberMetric-500-v1.json', 'questions/CyberMetric-2000-v1.json', 'questions/CyberMetric-10000-v1.json']
+    file_paths = ['questions/CyberMetric-2000-v1.json', 'questions/CyberMetric-10000-v1.json']
+    # file_paths = ['CyberMetric-80-v1.json', 'CyberMetric-500-v1.json']
+    model_ids = ["claude-3-5-sonnet-20240620"]
     
     for file_path in file_paths:
         for model_id in model_ids:

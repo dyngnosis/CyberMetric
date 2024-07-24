@@ -140,7 +140,7 @@ class MistralCyberMetricEvaluator:
 if __name__ == "__main__":
     API_KEY = os.getenv("MISTRAL_APIKEY")
     #file_paths = ['CyberMetric-80-v1.json', 'CyberMetric-500-v1.json', 'CyberMetric-2000-v1.json', 'CyberMetric-10000-v1.json']
-    file_paths = ['CyberMetric-80-v1.json', 'CyberMetric-500-v1.json']
+    file_paths = ['questions/CyberMetric-2000-v1.json', 'questions/CyberMetric-10000-v1.json']
     model_ids = ["open-mixtral-8x7b", "open-mixtral-8x22b", "mistral-large-2402"]
     for file_path in file_paths:
         for model_id in model_ids:
