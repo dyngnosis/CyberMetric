@@ -60,7 +60,7 @@
         "Acc 80 Q": "93.25 (5)",
         "Acc 500 Q": "90.2 (1)",
         "Acc 2k Q": "88.85 (1)",
-        "Acc 10k Q": null
+        "Acc 10k Q": "86.14 (2)"
     },
     "qwen2:7b": {
         "Company": "Alibaba",
@@ -84,10 +84,10 @@
         "Company": "OpenAI",
         "Size": "N/A",
         "License": "Unknown",
-        "Acc 80 Q": "95.0 (2)",
-        "Acc 500 Q": "91.9 (2)",
-        "Acc 2k Q": "90.1 (1)",
-        "Acc 10k Q": "86.91 (1)"
+        "Acc 80 Q": "95.0 (3)",
+        "Acc 500 Q": "91.47 (3)",
+        "Acc 2k Q": "90.15 (2)",
+        "Acc 10k Q": "86.98 (2)"
     },
     "qwen2:72b": {
         "Company": "Alibaba",
@@ -98,6 +98,15 @@
         "Acc 2k Q": "89.85 (1)",
         "Acc 10k Q": "86.77 (1)"
     },
+    "gemma2:27b": {
+        "Company": "Google",
+        "Size": "27B",
+        "License": "Unknown",
+        "Acc 80 Q": "90.62 (6)",
+        "Acc 500 Q": "88.7 (2)",
+        "Acc 2k Q": "87.45 (1)",
+        "Acc 10k Q": "84.77 (1)"
+    },
     "mixtral:8x7b": {
         "Company": "Mistral AI",
         "Size": "47B",
@@ -106,15 +115,6 @@
         "Acc 500 Q": "85.7 (2)",
         "Acc 2k Q": "84.75 (1)",
         "Acc 10k Q": "81.96 (1)"
-    },
-    "gemma2:27b": {
-        "Company": "Google",
-        "Size": "27B",
-        "License": "Unknown",
-        "Acc 80 Q": "90.75 (5)",
-        "Acc 500 Q": "88.7 (2)",
-        "Acc 2k Q": "87.45 (1)",
-        "Acc 10k Q": "84.77 (1)"
     },
     "llama3:8b": {
         "Company": "Meta",

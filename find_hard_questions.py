@@ -5,14 +5,26 @@ from collections import defaultdict
 import pandas as pd
 import plotly.graph_objects as go
 import re
+import html  # Import the html module for escaping
 
-def process_evaluation_reports(input_directory):
+def load_questions_json(file_path):
+    with open(file_path, 'r', encoding='utf-8') as file:
+        questions_data = json.load(file)
+    return questions_data
+
+def process_evaluation_reports(input_directory, questions_file):
+    questions_data = load_questions_json(questions_file)
+    
+    # Create a dictionary to store question details
+    question_details = {q['question']: q for q in questions_data['questions']}
+    
     question_stats = defaultdict(lambda: {
         "total_attempts": defaultdict(int),
         "incorrect_attempts": defaultdict(int),
         "null_answers": defaultdict(int),
         "correct_answer": "",
-        "selected_answers": defaultdict(lambda: defaultdict(int))
+        "selected_answers": defaultdict(lambda: defaultdict(int)),
+        "answers_text": {}  # Add a field to store answer option text
     })
     model_stats = defaultdict(lambda: {"total_attempts": 0, "incorrect_attempts": 0})
     all_models = set()
@@ -30,6 +42,11 @@ def process_evaluation_reports(input_directory):
                     is_correct = result["is_correct"]
                     llm_answer = result["llm_answer"]
                     correct_answer = result["correct_answer"]
+
+                    # Store answer option text
+                    question_details_obj = question_details.get(question)
+                    if question_details_obj:
+                        question_stats[question]["answers_text"] = question_details_obj["answers"]
 
                     question_stats[question]["total_attempts"][model_name] += 1
                     model_stats[model_name]["total_attempts"] += 1
@@ -62,7 +79,8 @@ def rank_hard_questions(question_stats, all_models):
             "null_answers": stats["null_answers"],
             "models_failed_count": models_failed_count,
             "correct_answer": stats["correct_answer"],
-            "selected_answers": stats["selected_answers"]
+            "selected_answers": stats["selected_answers"],
+            "answers_text": stats["answers_text"]  # Include answers text in the output
         })
 
     ranked_questions.sort(key=lambda x: (x["models_failed_count"], x["overall_failure_rate"]), reverse=True)
@@ -99,11 +117,15 @@ def create_interactive_heatmap(top_hard_questions, all_models, output_file):
             row.append(percentage)
             
             selected_answers = q["selected_answers"].get(model, {})
-            selected_answers_text = "<br>".join([f"{ans}: {count}" for ans, count in selected_answers.items()])
+            selected_answers_text = "<br>".join(
+                [f"{html.escape(ans)} ({html.escape(q['answers_text'].get(ans, ''))}): {count}" for ans, count in selected_answers.items()]
+            )  # Escape selected answers and include answer text
+            
+            correct_answer_text = f"{html.escape(q['correct_answer'])} ({html.escape(q['answers_text'].get(q['correct_answer'], ''))})"
             
             hover_text = (
-                f"<b>Question:</b> {q['question']}<br>"
-                f"<b>Correct Answer:</b> {q['correct_answer']}<br>"
+                f"<b>Question:</b> {html.escape(q['question'])}<br>"  # Escape question
+                f"<b>Correct Answer:</b> {correct_answer_text}<br>"  # Include and escape correct answer text
                 f"<b>Selected Answers:</b><br>{selected_answers_text}"
             )
             row_hover_texts.append(hover_text)
@@ -129,8 +151,7 @@ def create_interactive_heatmap(top_hard_questions, all_models, output_file):
 
     fig.update_layout(
         title={
-            'text': 'Hardest Questions Across Models(Percentage of Incorrect Answers)',
-            #'y': 0.95,  # Adjust this value to move the title down slightly
+            'text': 'Hardest Questions Across Models (Percentage of Incorrect Answers)',
             'x': 0.5,
             'xanchor': 'center',
             'yanchor': 'top',
@@ -177,8 +198,6 @@ def create_interactive_heatmap(top_hard_questions, all_models, output_file):
         yaxis=dict(showgrid=True, gridcolor='black', gridwidth=1)
     )
 
-    # Remove the additional annotation as it's no longer needed
-
     fig.write_html(output_file, full_html=True, include_plotlyjs='cdn')
     print(f"Interactive heatmap visualization saved as '{output_file}'")
 
@@ -186,12 +205,13 @@ def main():
     parser = argparse.ArgumentParser(description="Find hard questions from LLM evaluation reports.")
     parser.add_argument("input_directory", help="Path to the directory containing evaluation reports")
     parser.add_argument("-o", "--output", default="hard_questions.json", help="Output JSON file name (default: hard_questions.json)")
-    parser.add_argument("-n", "--num_questions", type=int, default=600, help="Number of top hard questions to output (default: 500)")
+    parser.add_argument("-n", "--num_questions", type=int, default=100, help="Number of top hard questions to output (default: 500)")
     parser.add_argument("-v", "--visual", default="hard_questions_heatmap.html", help="Output visual file name (default: hard_questions_heatmap.html)")
+    parser.add_argument("-q", "--questions_file", default="questions/CyberMetric-10000-v1.json", help="Path to questions JSON file")
     args = parser.parse_args()
 
     global question_stats, model_stats, all_models
-    question_stats, model_stats, all_models = process_evaluation_reports(args.input_directory)
+    question_stats, model_stats, all_models = process_evaluation_reports(args.input_directory, args.questions_file)
     ranked_questions = rank_hard_questions(question_stats, all_models)
 
     top_hard_questions = ranked_questions[:args.num_questions]

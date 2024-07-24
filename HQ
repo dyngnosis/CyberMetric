@@ -5,27 +5,27 @@ Debug - Model: llama3.1:8b, Accuracy: 80.43%
 Debug - Model: gemma2:9b, Accuracy: 83.91%
 Debug - Model: phi3:medium, Accuracy: 84.95%
 Debug - Model: mistral-large-2402, Accuracy: 86.15%
-Debug - Model: llama3:70b, Accuracy: 89.69%
+Debug - Model: llama3:70b, Accuracy: 86.86%
 Debug - Model: qwen2:7b, Accuracy: 81.94%
 Debug - Model: claude-3-5-sonnet-20240620, Accuracy: 88.88%
-Debug - Model: gpt-4o-mini, Accuracy: 87.85%
+Debug - Model: gpt-4o-mini, Accuracy: 87.80%
 Debug - Model: qwen2:72b, Accuracy: 87.71%
+Debug - Model: gemma2:27b, Accuracy: 85.65%
 Debug - Model: mixtral:8x7b, Accuracy: 82.90%
-Debug - Model: gemma2:27b, Accuracy: 85.63%
 Debug - Model: llama3:8b, Accuracy: 79.21%
 Debug - Model: open-mixtral-8x22b, Accuracy: 85.93%
 Debug - Model: open-mixtral-8x7b, Accuracy: 83.11%
 Debug - Model: mistral:7b, Accuracy: 72.56%
 Debug - Sorted models:
-  llama3:70b: 89.69%
   gpt-4o: 89.69%
   claude-3-5-sonnet-20240620: 88.88%
-  gpt-4o-mini: 87.85%
+  gpt-4o-mini: 87.80%
   qwen2:72b: 87.71%
+  llama3:70b: 86.86%
   llama3.1:70b: 86.44%
   mistral-large-2402: 86.15%
   open-mixtral-8x22b: 85.93%
-  gemma2:27b: 85.63%
+  gemma2:27b: 85.65%
   phi3:medium: 84.95%
   gemma2:9b: 83.91%
   open-mixtral-8x7b: 83.11%
@@ -41,565 +41,567 @@ Top 10 Hardest Questions:
    Question: What is the purpose of release management?
    Correct Answer: D
    Failure Rates by Model:
-     - llama3:70b: 100.00% (1/1)
-       Selected Answers:
-         B: 1
-     - open-mixtral-8x22b: 100.00% (2/2)
+     - qwen2:72b: 100.00% (2/2)
        Selected Answers:
          B: 2
-     - gemma2:9b: 100.00% (5/5)
-       Selected Answers:
-         B: 5
-     - gemma2:27b: 100.00% (3/3)
-       Selected Answers:
-         B: 3
      - mixtral:8x7b: 100.00% (3/3)
-       Selected Answers:
-         B: 3
-     - mistral:7b: 100.00% (3/3)
-       Selected Answers:
-         A: 3
-     - qwen2:7b: 100.00% (1/1)
-       Selected Answers:
-         B: 1
-     - llama3.1:70b: 100.00% (4/4)
-       Selected Answers:
-         B: 4
-     - llama3.1:8b: 100.00% (3/3)
-       Selected Answers:
-         A: 3
-     - gpt-4o-mini: 100.00% (3/3)
        Selected Answers:
          B: 3
      - llama3:8b: 100.00% (3/3)
        Selected Answers:
          A: 2
          B: 1
+     - open-mixtral-8x7b: 100.00% (2/2)
+       Selected Answers:
+         B: 2
+     - open-mixtral-8x22b: 100.00% (2/2)
+       Selected Answers:
+         B: 2
+     - claude-3-5-sonnet-20240620: 100.00% (2/2)
+       Selected Answers:
+         B: 2
+     - llama3:70b: 100.00% (2/2)
+       Selected Answers:
+         B: 2
+     - mistral:7b: 100.00% (3/3)
+       Selected Answers:
+         A: 3
+     - gpt-4o-mini: 100.00% (5/5)
+       Selected Answers:
+         B: 5
+     - gemma2:9b: 100.00% (5/5)
+       Selected Answers:
+         B: 5
      - mistral-large-2402: 100.00% (2/2)
        Selected Answers:
          B: 2
+     - gemma2:27b: 100.00% (3/3)
+       Selected Answers:
+         B: 3
+     - llama3.1:8b: 100.00% (3/3)
+       Selected Answers:
+         A: 3
+     - gpt-4o: 100.00% (4/4)
+       Selected Answers:
+         B: 4
+     - llama3.1:70b: 100.00% (4/4)
+       Selected Answers:
+         B: 4
      - phi3:medium: 100.00% (3/3)
        Selected Answers:
          B: 2
          C: 1
-     - gpt-4o: 100.00% (4/4)
+     - qwen2:7b: 100.00% (1/1)
        Selected Answers:
-         B: 4
-     - claude-3-5-sonnet-20240620: 100.00% (2/2)
-       Selected Answers:
-         B: 2
-     - qwen2:72b: 100.00% (2/2)
-       Selected Answers:
-         B: 2
-     - open-mixtral-8x7b: 100.00% (2/2)
-       Selected Answers:
-         B: 2
+         B: 1
 
 2. Overall Failure Rate: 100.00%, Models Failed: 17
    Question: What property of 'e' makes it efficient for RSA encryption?
    Correct Answer: D
    Failure Rates by Model:
-     - llama3:70b: 100.00% (2/2)
-       Selected Answers:
-         B: 2
-     - open-mixtral-8x22b: 100.00% (3/3)
+     - qwen2:72b: 100.00% (3/3)
        Selected Answers:
          B: 3
-     - gemma2:9b: 100.00% (7/7)
-       Selected Answers:
-         B: 7
-     - gemma2:27b: 100.00% (4/4)
-       Selected Answers:
-         B: 4
      - mixtral:8x7b: 100.00% (4/4)
-       Selected Answers:
-         B: 4
-     - mistral:7b: 100.00% (4/4)
-       Selected Answers:
-         C: 1
-         B: 3
-     - qwen2:7b: 100.00% (2/2)
-       Selected Answers:
-         B: 2
-     - llama3.1:70b: 100.00% (7/7)
-       Selected Answers:
-         B: 5
-         A: 2
-     - llama3.1:8b: 100.00% (5/5)
-       Selected Answers:
-         B: 5
-     - gpt-4o-mini: 100.00% (4/4)
        Selected Answers:
          B: 4
      - llama3:8b: 100.00% (4/4)
        Selected Answers:
          B: 4
-     - mistral-large-2402: 100.00% (3/3)
-       Selected Answers:
-         B: 3
-     - phi3:medium: 100.00% (4/4)
-       Selected Answers:
-         B: 4
-     - gpt-4o: 100.00% (5/5)
-       Selected Answers:
-         B: 5
-     - claude-3-5-sonnet-20240620: 100.00% (4/4)
-       Selected Answers:
-         B: 4
-     - qwen2:72b: 100.00% (3/3)
-       Selected Answers:
-         B: 3
      - open-mixtral-8x7b: 100.00% (3/3)
        Selected Answers:
          B: 3
+     - open-mixtral-8x22b: 100.00% (3/3)
+       Selected Answers:
+         B: 3
+     - claude-3-5-sonnet-20240620: 100.00% (4/4)
+       Selected Answers:
+         B: 4
+     - llama3:70b: 100.00% (3/3)
+       Selected Answers:
+         B: 3
+     - mistral:7b: 100.00% (4/4)
+       Selected Answers:
+         C: 1
+         B: 3
+     - gpt-4o-mini: 100.00% (7/7)
+       Selected Answers:
+         B: 7
+     - gemma2:9b: 100.00% (7/7)
+       Selected Answers:
+         B: 7
+     - mistral-large-2402: 100.00% (3/3)
+       Selected Answers:
+         B: 3
+     - gemma2:27b: 100.00% (4/4)
+       Selected Answers:
+         B: 4
+     - llama3.1:8b: 100.00% (5/5)
+       Selected Answers:
+         B: 5
+     - gpt-4o: 100.00% (5/5)
+       Selected Answers:
+         B: 5
+     - llama3.1:70b: 100.00% (7/7)
+       Selected Answers:
+         B: 5
+         A: 2
+     - phi3:medium: 100.00% (4/4)
+       Selected Answers:
+         B: 4
+     - qwen2:7b: 100.00% (2/2)
+       Selected Answers:
+         B: 2
 
 3. Overall Failure Rate: 100.00%, Models Failed: 17
    Question: Which source of storage on a system is most volatile and should be dumped to a file immediately during forensic processes?
    Correct Answer: D
    Failure Rates by Model:
-     - llama3:70b: 100.00% (2/2)
-       Selected Answers:
-         B: 2
-     - open-mixtral-8x22b: 100.00% (3/3)
+     - qwen2:72b: 100.00% (3/3)
        Selected Answers:
          B: 3
-     - gemma2:9b: 100.00% (7/7)
-       Selected Answers:
-         B: 7
-     - gemma2:27b: 100.00% (4/4)
-       Selected Answers:
-         B: 4
      - mixtral:8x7b: 100.00% (4/4)
-       Selected Answers:
-         B: 4
-     - mistral:7b: 100.00% (4/4)
-       Selected Answers:
-         A: 4
-     - qwen2:7b: 100.00% (2/2)
-       Selected Answers:
-         B: 2
-     - llama3.1:70b: 100.00% (7/7)
-       Selected Answers:
-         B: 7
-     - llama3.1:8b: 100.00% (5/5)
-       Selected Answers:
-         B: 5
-     - gpt-4o-mini: 100.00% (4/4)
        Selected Answers:
          B: 4
      - llama3:8b: 100.00% (4/4)
        Selected Answers:
          B: 1
          A: 3
-     - mistral-large-2402: 100.00% (3/3)
-       Selected Answers:
-         B: 3
-     - phi3:medium: 100.00% (4/4)
-       Selected Answers:
-         B: 4
-     - gpt-4o: 100.00% (5/5)
-       Selected Answers:
-         B: 5
-     - claude-3-5-sonnet-20240620: 100.00% (4/4)
-       Selected Answers:
-         B: 4
-     - qwen2:72b: 100.00% (3/3)
-       Selected Answers:
-         B: 3
      - open-mixtral-8x7b: 100.00% (3/3)
        Selected Answers:
          B: 3
+     - open-mixtral-8x22b: 100.00% (3/3)
+       Selected Answers:
+         B: 3
+     - claude-3-5-sonnet-20240620: 100.00% (4/4)
+       Selected Answers:
+         B: 4
+     - llama3:70b: 100.00% (3/3)
+       Selected Answers:
+         B: 3
+     - mistral:7b: 100.00% (4/4)
+       Selected Answers:
+         A: 4
+     - gpt-4o-mini: 100.00% (7/7)
+       Selected Answers:
+         B: 7
+     - gemma2:9b: 100.00% (7/7)
+       Selected Answers:
+         B: 7
+     - mistral-large-2402: 100.00% (3/3)
+       Selected Answers:
+         B: 3
+     - gemma2:27b: 100.00% (4/4)
+       Selected Answers:
+         B: 4
+     - llama3.1:8b: 100.00% (5/5)
+       Selected Answers:
+         B: 5
+     - gpt-4o: 100.00% (5/5)
+       Selected Answers:
+         B: 5
+     - llama3.1:70b: 100.00% (7/7)
+       Selected Answers:
+         B: 7
+     - phi3:medium: 100.00% (4/4)
+       Selected Answers:
+         B: 4
+     - qwen2:7b: 100.00% (2/2)
+       Selected Answers:
+         B: 2
 
 4. Overall Failure Rate: 100.00%, Models Failed: 17
    Question: Which perspective focuses on establishing security requirements of subsystems/solutions at different layers in a distributed system?
    Correct Answer: C
    Failure Rates by Model:
-     - llama3:70b: 100.00% (1/1)
-       Selected Answers:
-         D: 1
-     - open-mixtral-8x22b: 100.00% (2/2)
+     - qwen2:72b: 100.00% (2/2)
        Selected Answers:
          D: 2
-     - gemma2:9b: 100.00% (5/5)
-       Selected Answers:
-         D: 5
-     - gemma2:27b: 100.00% (3/3)
-       Selected Answers:
-         D: 3
      - mixtral:8x7b: 100.00% (3/3)
-       Selected Answers:
-         D: 3
-     - mistral:7b: 100.00% (3/3)
-       Selected Answers:
-         D: 3
-     - qwen2:7b: 100.00% (1/1)
-       Selected Answers:
-         D: 1
-     - llama3.1:70b: 100.00% (4/4)
-       Selected Answers:
-         D: 4
-     - llama3.1:8b: 100.00% (3/3)
-       Selected Answers:
-         D: 3
-     - gpt-4o-mini: 100.00% (3/3)
        Selected Answers:
          D: 3
      - llama3:8b: 100.00% (3/3)
        Selected Answers:
          D: 3
+     - open-mixtral-8x7b: 100.00% (2/2)
+       Selected Answers:
+         D: 2
+     - open-mixtral-8x22b: 100.00% (2/2)
+       Selected Answers:
+         D: 2
+     - claude-3-5-sonnet-20240620: 100.00% (2/2)
+       Selected Answers:
+         D: 2
+     - llama3:70b: 100.00% (2/2)
+       Selected Answers:
+         D: 2
+     - mistral:7b: 100.00% (3/3)
+       Selected Answers:
+         D: 3
+     - gpt-4o-mini: 100.00% (5/5)
+       Selected Answers:
+         D: 5
+     - gemma2:9b: 100.00% (5/5)
+       Selected Answers:
+         D: 5
      - mistral-large-2402: 100.00% (2/2)
        Selected Answers:
          D: 2
+     - gemma2:27b: 100.00% (3/3)
+       Selected Answers:
+         D: 3
+     - llama3.1:8b: 100.00% (3/3)
+       Selected Answers:
+         D: 3
+     - gpt-4o: 100.00% (4/4)
+       Selected Answers:
+         D: 4
+     - llama3.1:70b: 100.00% (4/4)
+       Selected Answers:
+         D: 4
      - phi3:medium: 100.00% (3/3)
        Selected Answers:
          D: 2
          A: 1
-     - gpt-4o: 100.00% (4/4)
+     - qwen2:7b: 100.00% (1/1)
        Selected Answers:
-         D: 4
-     - claude-3-5-sonnet-20240620: 100.00% (2/2)
-       Selected Answers:
-         D: 2
-     - qwen2:72b: 100.00% (2/2)
-       Selected Answers:
-         D: 2
-     - open-mixtral-8x7b: 100.00% (2/2)
-       Selected Answers:
-         D: 2
+         D: 1
 
 5. Overall Failure Rate: 100.00%, Models Failed: 17
-   Question: Which of the following is a common point of compromise for attackers to go after?
-   Correct Answer: A
+   Question: What is the term used to describe the IP addresses in the range 172.16.0.0 to 172.31.255.255?
+   Correct Answer: C
    Failure Rates by Model:
+     - qwen2:72b: 100.00% (1/1)
+       Selected Answers:
+         B: 1
+     - mixtral:8x7b: 100.00% (1/1)
+       Selected Answers:
+         B: 1
+     - llama3:8b: 100.00% (1/1)
+       Selected Answers:
+         B: 1
+     - open-mixtral-8x7b: 100.00% (1/1)
+       Selected Answers:
+         B: 1
+     - open-mixtral-8x22b: 100.00% (1/1)
+       Selected Answers:
+         B: 1
+     - claude-3-5-sonnet-20240620: 100.00% (1/1)
+       Selected Answers:
+         B: 1
      - llama3:70b: 100.00% (1/1)
        Selected Answers:
-         D: 1
-     - open-mixtral-8x22b: 100.00% (2/2)
+         B: 1
+     - mistral:7b: 100.00% (1/1)
        Selected Answers:
-         D: 2
-     - gemma2:9b: 100.00% (4/4)
-       Selected Answers:
-         D: 4
-     - gemma2:27b: 100.00% (2/2)
-       Selected Answers:
-         D: 2
-     - mixtral:8x7b: 100.00% (2/2)
-       Selected Answers:
-         D: 2
-     - mistral:7b: 100.00% (2/2)
-       Selected Answers:
-         D: 2
-     - qwen2:7b: 100.00% (2/2)
-       Selected Answers:
-         D: 2
-     - llama3.1:70b: 100.00% (5/5)
-       Selected Answers:
-         D: 5
-     - llama3.1:8b: 100.00% (3/3)
-       Selected Answers:
-         D: 3
+         B: 1
      - gpt-4o-mini: 100.00% (2/2)
        Selected Answers:
-         D: 2
-     - llama3:8b: 100.00% (2/2)
+         B: 2
+     - gemma2:9b: 100.00% (2/2)
        Selected Answers:
-         D: 2
-     - mistral-large-2402: 100.00% (2/2)
+         B: 2
+     - mistral-large-2402: 100.00% (1/1)
        Selected Answers:
-         D: 2
-     - phi3:medium: 100.00% (2/2)
+         B: 1
+     - gemma2:27b: 100.00% (1/1)
        Selected Answers:
-         D: 2
-     - gpt-4o: 100.00% (2/2)
+         B: 1
+     - llama3.1:8b: 100.00% (1/1)
        Selected Answers:
-         D: 2
-     - claude-3-5-sonnet-20240620: 100.00% (3/3)
+         B: 1
+     - gpt-4o: 100.00% (1/1)
        Selected Answers:
-         D: 3
-     - qwen2:72b: 100.00% (2/2)
+         B: 1
+     - llama3.1:70b: 100.00% (2/2)
        Selected Answers:
-         D: 2
-     - open-mixtral-8x7b: 100.00% (2/2)
+         B: 2
+     - phi3:medium: 100.00% (1/1)
        Selected Answers:
-         D: 2
+         B: 1
+     - qwen2:7b: 100.00% (1/1)
+       Selected Answers:
+         B: 1
 
 6. Overall Failure Rate: 100.00%, Models Failed: 17
-   Question: What is the primary concern addressed by the Bell-LaPadula model?
-   Correct Answer: D
+   Question: What is the primary security goal set forth by the designers of GSM?
+   Correct Answer: C
    Failure Rates by Model:
+     - qwen2:72b: 100.00% (1/1)
+       Selected Answers:
+         B: 1
+     - mixtral:8x7b: 100.00% (1/1)
+       Selected Answers:
+         B: 1
+     - llama3:8b: 100.00% (1/1)
+       Selected Answers:
+         A: 1
+     - open-mixtral-8x7b: 100.00% (1/1)
+       Selected Answers:
+         B: 1
+     - open-mixtral-8x22b: 100.00% (1/1)
+       Selected Answers:
+         B: 1
+     - claude-3-5-sonnet-20240620: 100.00% (1/1)
+       Selected Answers:
+         B: 1
      - llama3:70b: 100.00% (1/1)
        Selected Answers:
          B: 1
-     - open-mixtral-8x22b: 100.00% (2/2)
+     - mistral:7b: 100.00% (1/1)
        Selected Answers:
-         A: 2
-     - gemma2:9b: 100.00% (4/4)
-       Selected Answers:
-         A: 4
-     - gemma2:27b: 100.00% (2/2)
-       Selected Answers:
-         A: 2
-     - mixtral:8x7b: 100.00% (2/2)
-       Selected Answers:
-         A: 2
-     - mistral:7b: 100.00% (2/2)
-       Selected Answers:
-         A: 2
-     - qwen2:7b: 100.00% (2/2)
-       Selected Answers:
-         B: 2
-     - llama3.1:70b: 100.00% (5/5)
-       Selected Answers:
-         A: 5
-     - llama3.1:8b: 100.00% (3/3)
-       Selected Answers:
-         A: 3
+         B: 1
      - gpt-4o-mini: 100.00% (2/2)
        Selected Answers:
-         A: 2
-     - llama3:8b: 100.00% (2/2)
+         B: 2
+     - gemma2:9b: 100.00% (2/2)
        Selected Answers:
-         A: 2
-     - mistral-large-2402: 100.00% (2/2)
+         B: 2
+     - mistral-large-2402: 100.00% (1/1)
        Selected Answers:
-         A: 2
-     - phi3:medium: 100.00% (2/2)
+         B: 1
+     - gemma2:27b: 100.00% (1/1)
        Selected Answers:
-         A: 2
-     - gpt-4o: 100.00% (2/2)
+         B: 1
+     - llama3.1:8b: 100.00% (1/1)
        Selected Answers:
-         A: 2
-     - claude-3-5-sonnet-20240620: 100.00% (3/3)
+         A: 1
+     - gpt-4o: 100.00% (1/1)
        Selected Answers:
-         A: 3
-     - qwen2:72b: 100.00% (2/2)
+         B: 1
+     - llama3.1:70b: 100.00% (2/2)
        Selected Answers:
-         A: 2
-     - open-mixtral-8x7b: 100.00% (2/2)
+         B: 1
+         A: 1
+     - phi3:medium: 100.00% (1/1)
        Selected Answers:
-         A: 2
+         B: 1
+     - qwen2:7b: 100.00% (1/1)
+       Selected Answers:
+         B: 1
 
 7. Overall Failure Rate: 100.00%, Models Failed: 17
-   Question: What is the label typically used for information that, if breached, would cause serious damage to the organization's mission?
+   Question: According to NIST SP 800-133 REV. 2, what is the maximum security strength that can be supported by an ECDSA key pair generated using an appropriate elliptic curve and a base point whose order is a 224-bit to 255-bit prime number?
    Correct Answer: C
    Failure Rates by Model:
-     - llama3:70b: 100.00% (1/1)
+     - qwen2:72b: 100.00% (1/1)
        Selected Answers:
-         D: 1
-     - open-mixtral-8x22b: 100.00% (2/2)
+         A: 1
+     - mixtral:8x7b: 100.00% (1/1)
        Selected Answers:
-         D: 2
-     - gemma2:9b: 100.00% (4/4)
+         A: 1
+     - llama3:8b: 100.00% (1/1)
        Selected Answers:
-         A: 4
-     - gemma2:27b: 100.00% (2/2)
+         B: 1
+     - open-mixtral-8x7b: 100.00% (1/1)
        Selected Answers:
-         D: 2
-     - mixtral:8x7b: 100.00% (2/2)
+         B: 1
+     - open-mixtral-8x22b: 100.00% (1/1)
        Selected Answers:
-         D: 2
-     - mistral:7b: 100.00% (2/2)
+         B: 1
+     - claude-3-5-sonnet-20240620: 100.00% (1/1)
        Selected Answers:
-         D: 2
-     - qwen2:7b: 100.00% (2/2)
-       Selected Answers:
-         D: 2
-     - llama3.1:70b: 100.00% (5/5)
-       Selected Answers:
-         D: 5
-     - llama3.1:8b: 100.00% (3/3)
-       Selected Answers:
-         D: 3
-     - gpt-4o-mini: 100.00% (2/2)
-       Selected Answers:
-         D: 2
-     - llama3:8b: 100.00% (2/2)
-       Selected Answers:
-         D: 2
-     - mistral-large-2402: 100.00% (2/2)
-       Selected Answers:
-         D: 2
-     - phi3:medium: 100.00% (2/2)
-       Selected Answers:
-         D: 2
-     - gpt-4o: 100.00% (2/2)
-       Selected Answers:
-         D: 2
-     - claude-3-5-sonnet-20240620: 100.00% (3/3)
-       Selected Answers:
-         D: 3
-     - qwen2:72b: 100.00% (2/2)
-       Selected Answers:
-         D: 2
-     - open-mixtral-8x7b: 100.00% (2/2)
-       Selected Answers:
-         D: 2
-
-8. Overall Failure Rate: 100.00%, Models Failed: 17
-   Question: What is the best reason to implement a security policy?
-   Correct Answer: C
-   Failure Rates by Model:
+         B: 1
      - llama3:70b: 100.00% (1/1)
        Selected Answers:
          B: 1
-     - open-mixtral-8x22b: 100.00% (2/2)
+     - mistral:7b: 100.00% (1/1)
        Selected Answers:
-         B: 2
-     - gemma2:9b: 100.00% (4/4)
-       Selected Answers:
-         B: 4
-     - gemma2:27b: 100.00% (2/2)
-       Selected Answers:
-         B: 2
-     - mixtral:8x7b: 100.00% (2/2)
-       Selected Answers:
-         B: 2
-     - mistral:7b: 100.00% (2/2)
-       Selected Answers:
-         B: 2
-     - qwen2:7b: 100.00% (2/2)
-       Selected Answers:
-         B: 2
-     - llama3.1:70b: 100.00% (5/5)
-       Selected Answers:
-         B: 5
-     - llama3.1:8b: 100.00% (3/3)
-       Selected Answers:
-         B: 3
+         A: 1
      - gpt-4o-mini: 100.00% (2/2)
        Selected Answers:
-         B: 2
-     - llama3:8b: 100.00% (2/2)
+         A: 2
+     - gemma2:9b: 100.00% (2/2)
        Selected Answers:
-         B: 2
-     - mistral-large-2402: 100.00% (2/2)
+         B: 1
+         A: 1
+     - mistral-large-2402: 100.00% (1/1)
        Selected Answers:
-         B: 2
-     - phi3:medium: 100.00% (2/2)
+         B: 1
+     - gemma2:27b: 100.00% (1/1)
        Selected Answers:
-         B: 2
-     - gpt-4o: 100.00% (2/2)
+         B: 1
+     - llama3.1:8b: 100.00% (1/1)
        Selected Answers:
-         B: 2
-     - claude-3-5-sonnet-20240620: 100.00% (3/3)
+         A: 1
+     - gpt-4o: 100.00% (1/1)
        Selected Answers:
-         B: 3
-     - qwen2:72b: 100.00% (2/2)
+         A: 1
+     - llama3.1:70b: 100.00% (2/2)
        Selected Answers:
-         B: 2
-     - open-mixtral-8x7b: 100.00% (2/2)
+         A: 2
+     - phi3:medium: 100.00% (1/1)
        Selected Answers:
-         B: 2
+         A: 1
+     - qwen2:7b: 100.00% (1/1)
+       Selected Answers:
+         A: 1
 
-9. Overall Failure Rate: 100.00%, Models Failed: 17
-   Question: What types of attacks are addressed by the Android and iOS operating systems?
-   Correct Answer: B
+8. Overall Failure Rate: 100.00%, Models Failed: 17
+   Question: What is used to authenticate IPsec endpoints to each other?
+   Correct Answer: D
    Failure Rates by Model:
+     - qwen2:72b: 100.00% (1/1)
+       Selected Answers:
+         A: 1
+     - mixtral:8x7b: 100.00% (1/1)
+       Selected Answers:
+         A: 1
+     - llama3:8b: 100.00% (1/1)
+       Selected Answers:
+         A: 1
+     - open-mixtral-8x7b: 100.00% (1/1)
+       Selected Answers:
+         A: 1
+     - open-mixtral-8x22b: 100.00% (1/1)
+       Selected Answers:
+         A: 1
+     - claude-3-5-sonnet-20240620: 100.00% (1/1)
+       Selected Answers:
+         A: 1
      - llama3:70b: 100.00% (1/1)
        Selected Answers:
-         D: 1
-     - open-mixtral-8x22b: 100.00% (2/2)
+         A: 1
+     - mistral:7b: 100.00% (1/1)
        Selected Answers:
-         D: 2
-     - gemma2:9b: 100.00% (4/4)
-       Selected Answers:
-         D: 4
-     - gemma2:27b: 100.00% (2/2)
-       Selected Answers:
-         D: 2
-     - mixtral:8x7b: 100.00% (2/2)
-       Selected Answers:
-         C: 2
-     - mistral:7b: 100.00% (2/2)
-       Selected Answers:
-         D: 2
-     - qwen2:7b: 100.00% (2/2)
-       Selected Answers:
-         D: 2
-     - llama3.1:70b: 100.00% (5/5)
-       Selected Answers:
-         D: 5
-     - llama3.1:8b: 100.00% (3/3)
-       Selected Answers:
-         D: 3
+         A: 1
      - gpt-4o-mini: 100.00% (2/2)
        Selected Answers:
-         D: 2
-     - llama3:8b: 100.00% (2/2)
+         A: 2
+     - gemma2:9b: 100.00% (2/2)
        Selected Answers:
-         D: 2
-     - mistral-large-2402: 100.00% (2/2)
+         A: 2
+     - mistral-large-2402: 100.00% (1/1)
        Selected Answers:
-         D: 2
-     - phi3:medium: 100.00% (2/2)
+         A: 1
+     - gemma2:27b: 100.00% (1/1)
        Selected Answers:
-         D: 2
-     - gpt-4o: 100.00% (2/2)
+         A: 1
+     - llama3.1:8b: 100.00% (1/1)
        Selected Answers:
-         D: 2
-     - claude-3-5-sonnet-20240620: 100.00% (3/3)
+         A: 1
+     - gpt-4o: 100.00% (1/1)
        Selected Answers:
-         D: 3
-     - qwen2:72b: 100.00% (2/2)
+         A: 1
+     - llama3.1:70b: 100.00% (2/2)
        Selected Answers:
-         D: 2
-     - open-mixtral-8x7b: 100.00% (2/2)
+         A: 2
+     - phi3:medium: 100.00% (1/1)
        Selected Answers:
-         C: 2
+         A: 1
+     - qwen2:7b: 100.00% (1/1)
+       Selected Answers:
+         A: 1
 
-10. Overall Failure Rate: 100.00%, Models Failed: 17
-   Question: Which component of an intrusion detection system (IDS) detects anomalous traffic on the network?
+9. Overall Failure Rate: 100.00%, Models Failed: 17
+   Question: What is the main objective of attacking an encryption system?
    Correct Answer: A
    Failure Rates by Model:
+     - qwen2:72b: 100.00% (1/1)
+       Selected Answers:
+         C: 1
+     - mixtral:8x7b: 100.00% (1/1)
+       Selected Answers:
+         C: 1
+     - llama3:8b: 100.00% (1/1)
+       Selected Answers:
+         C: 1
+     - open-mixtral-8x7b: 100.00% (1/1)
+       Selected Answers:
+         C: 1
+     - open-mixtral-8x22b: 100.00% (1/1)
+       Selected Answers:
+         C: 1
+     - claude-3-5-sonnet-20240620: 100.00% (1/1)
+       Selected Answers:
+         C: 1
      - llama3:70b: 100.00% (1/1)
        Selected Answers:
          C: 1
-     - open-mixtral-8x22b: 100.00% (2/2)
+     - mistral:7b: 100.00% (1/1)
        Selected Answers:
-         D: 2
-     - gemma2:9b: 100.00% (4/4)
-       Selected Answers:
-         D: 4
-     - gemma2:27b: 100.00% (2/2)
-       Selected Answers:
-         D: 2
-     - mixtral:8x7b: 100.00% (2/2)
-       Selected Answers:
-         D: 2
-     - mistral:7b: 100.00% (2/2)
-       Selected Answers:
-         D: 2
-     - qwen2:7b: 100.00% (2/2)
-       Selected Answers:
-         C: 2
-     - llama3.1:70b: 100.00% (5/5)
-       Selected Answers:
-         D: 5
-     - llama3.1:8b: 100.00% (3/3)
-       Selected Answers:
-         D: 3
+         C: 1
      - gpt-4o-mini: 100.00% (2/2)
        Selected Answers:
-         D: 2
-     - llama3:8b: 100.00% (2/2)
+         C: 2
+     - gemma2:9b: 100.00% (2/2)
        Selected Answers:
-         D: 2
-     - mistral-large-2402: 100.00% (2/2)
+         C: 2
+     - mistral-large-2402: 100.00% (1/1)
        Selected Answers:
-         D: 2
-     - phi3:medium: 100.00% (2/2)
+         C: 1
+     - gemma2:27b: 100.00% (1/1)
        Selected Answers:
-         D: 2
-     - gpt-4o: 100.00% (2/2)
+         C: 1
+     - llama3.1:8b: 100.00% (1/1)
        Selected Answers:
-         D: 2
-     - claude-3-5-sonnet-20240620: 100.00% (3/3)
+         C: 1
+     - gpt-4o: 100.00% (1/1)
        Selected Answers:
-         C: 3
-     - qwen2:72b: 100.00% (2/2)
+         C: 1
+     - llama3.1:70b: 100.00% (2/2)
        Selected Answers:
-         D: 2
-     - open-mixtral-8x7b: 100.00% (2/2)
+         C: 2
+     - phi3:medium: 100.00% (1/1)
        Selected Answers:
-         D: 2
+         C: 1
+     - qwen2:7b: 100.00% (1/1)
+       Selected Answers:
+         C: 1
+
+10. Overall Failure Rate: 100.00%, Models Failed: 17
+   Question: In XTS-AES mode, how are the last two blocks encrypted when the final plaintext block contains less than 128 bits?
+   Correct Answer: D
+   Failure Rates by Model:
+     - qwen2:72b: 100.00% (1/1)
+       Selected Answers:
+         A: 1
+     - mixtral:8x7b: 100.00% (1/1)
+       Selected Answers:
+         B: 1
+     - llama3:8b: 100.00% (1/1)
+       Selected Answers:
+         A: 1
+     - open-mixtral-8x7b: 100.00% (1/1)
+       Selected Answers:
+         B: 1
+     - open-mixtral-8x22b: 100.00% (1/1)
+       Selected Answers:
+         A: 1
+     - claude-3-5-sonnet-20240620: 100.00% (1/1)
+       Selected Answers:
+         B: 1
+     - llama3:70b: 100.00% (1/1)
+       Selected Answers:
+         A: 1
+     - mistral:7b: 100.00% (1/1)
+       Selected Answers:
+         A: 1
+     - gpt-4o-mini: 100.00% (2/2)
+       Selected Answers:
+         A: 2
+     - gemma2:9b: 100.00% (2/2)
+       Selected Answers:
+         A: 2
+     - mistral-large-2402: 100.00% (1/1)
+       Selected Answers:
+         A: 1
+     - gemma2:27b: 100.00% (1/1)
+       Selected Answers:
+         A: 1
+     - llama3.1:8b: 100.00% (1/1)
+       Selected Answers:
+         A: 1
+     - gpt-4o: 100.00% (1/1)
+       Selected Answers:
+         B: 1
+     - llama3.1:70b: 100.00% (2/2)
+       Selected Answers:
+         A: 2
+     - phi3:medium: 100.00% (1/1)
+       Selected Answers:
+         A: 1
+     - qwen2:7b: 100.00% (1/1)
+       Selected Answers:
+         A: 1
 
