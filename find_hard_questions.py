@@ -129,11 +129,12 @@ def create_interactive_heatmap(top_hard_questions, all_models, output_file):
 
     fig.update_layout(
         title={
-            'text': 'Hardest Questions Across Models<br>(Percentage of Incorrect Answers)',
-            'y':0.99,
-            'x':0.5,
+            'text': 'Hardest Questions Across Models(Percentage of Incorrect Answers)',
+            #'y': 0.95,  # Adjust this value to move the title down slightly
+            'x': 0.5,
             'xanchor': 'center',
-            'yanchor': 'top'
+            'yanchor': 'top',
+            'font': dict(size=36)  # Keep the increased title font size
         },
         yaxis_title='Questions',
         height=max(1000, len(top_hard_questions) * 20),
@@ -143,7 +144,8 @@ def create_interactive_heatmap(top_hard_questions, all_models, output_file):
     fig.update_layout(
         xaxis=dict(
             side="top",
-            tickangle=45
+            tickangle=45,
+            tickfont=dict(size=10),  # Reduce font size of top labels
         )
     )
 
@@ -158,13 +160,14 @@ def create_interactive_heatmap(top_hard_questions, all_models, output_file):
             ticks="",
             showticklabels=True,
             tickangle=45,
+            tickfont=dict(size=10),  # Reduce font size of bottom labels
             anchor="y",
             showgrid=False
         )
     )
 
     fig.update_layout(
-        margin=dict(t=180, b=150, l=100, r=50),
+        margin=dict(t=220, b=150, l=100, r=50),  # Increase top margin further
         autosize=False
     )
 
@@ -174,6 +177,8 @@ def create_interactive_heatmap(top_hard_questions, all_models, output_file):
         yaxis=dict(showgrid=True, gridcolor='black', gridwidth=1)
     )
 
+    # Remove the additional annotation as it's no longer needed
+
     fig.write_html(output_file, full_html=True, include_plotlyjs='cdn')
     print(f"Interactive heatmap visualization saved as '{output_file}'")
 
@@ -181,7 +186,7 @@ def main():
     parser = argparse.ArgumentParser(description="Find hard questions from LLM evaluation reports.")
     parser.add_argument("input_directory", help="Path to the directory containing evaluation reports")
     parser.add_argument("-o", "--output", default="hard_questions.json", help="Output JSON file name (default: hard_questions.json)")
-    parser.add_argument("-n", "--num_questions", type=int, default=500, help="Number of top hard questions to output (default: 500)")
+    parser.add_argument("-n", "--num_questions", type=int, default=600, help="Number of top hard questions to output (default: 500)")
     parser.add_argument("-v", "--visual", default="hard_questions_heatmap.html", help="Output visual file name (default: hard_questions_heatmap.html)")
     args = parser.parse_args()
 

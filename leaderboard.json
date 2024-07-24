@@ -12,7 +12,7 @@
         "Company": "Meta",
         "Size": "70B",
         "License": "Unknown",
-        "Acc 80 Q": "93.47 (9)",
+        "Acc 80 Q": "93.12 (14)",
         "Acc 500 Q": "89.4 (2)",
         "Acc 2k Q": "88.6 (3)",
         "Acc 10k Q": "85.29 (2)"
@@ -21,10 +21,28 @@
         "Company": "Meta",
         "Size": "8B",
         "License": "Unknown",
-        "Acc 80 Q": "88.33 (9)",
+        "Acc 80 Q": "86.58 (15)",
         "Acc 500 Q": "81.4 (2)",
         "Acc 2k Q": "81.4 (2)",
         "Acc 10k Q": "79.24 (1)"
+    },
+    "gemma2:9b": {
+        "Company": "Google",
+        "Size": "9B",
+        "License": "Unknown",
+        "Acc 80 Q": "89.27 (12)",
+        "Acc 500 Q": "86.8 (3)",
+        "Acc 2k Q": "84.97 (2)",
+        "Acc 10k Q": "83.23 (2)"
+    },
+    "phi3:medium": {
+        "Company": "Microsoft",
+        "Size": "14B",
+        "License": "Unknown",
+        "Acc 80 Q": "91.67 (6)",
+        "Acc 500 Q": "89.1 (2)",
+        "Acc 2k Q": "85.75 (1)",
+        "Acc 10k Q": "84.07 (1)"
     },
     "mistral-large-2402": {
         "Company": "Mistral AI",
@@ -35,11 +53,20 @@
         "Acc 2k Q": "88.3 (1)",
         "Acc 10k Q": "85.4 (1)"
     },
+    "llama3:70b": {
+        "Company": "Meta",
+        "Size": "70B",
+        "License": "Unknown",
+        "Acc 80 Q": "93.25 (5)",
+        "Acc 500 Q": "90.2 (1)",
+        "Acc 2k Q": "88.85 (1)",
+        "Acc 10k Q": null
+    },
     "qwen2:7b": {
         "Company": "Alibaba",
         "Size": "7B",
         "License": "Unknown",
-        "Acc 80 Q": null,
+        "Acc 80 Q": "91.67 (6)",
         "Acc 500 Q": null,
         "Acc 2k Q": "83.6 (1)",
         "Acc 10k Q": "81.16 (1)"
@@ -66,16 +93,16 @@
         "Company": "Alibaba",
         "Size": "72B",
         "License": "Unknown",
-        "Acc 80 Q": null,
+        "Acc 80 Q": "95.0 (5)",
         "Acc 500 Q": "92.6 (1)",
         "Acc 2k Q": "89.85 (1)",
-        "Acc 10k Q": null
+        "Acc 10k Q": "86.77 (1)"
     },
     "mixtral:8x7b": {
         "Company": "Mistral AI",
-        "Size": "N/A",
+        "Size": "47B",
         "License": "Unknown",
-        "Acc 80 Q": null,
+        "Acc 80 Q": "90.5 (5)",
         "Acc 500 Q": "85.7 (2)",
         "Acc 2k Q": "84.75 (1)",
         "Acc 10k Q": "81.96 (1)"
@@ -84,7 +111,7 @@
         "Company": "Google",
         "Size": "27B",
         "License": "Unknown",
-        "Acc 80 Q": null,
+        "Acc 80 Q": "90.75 (5)",
         "Acc 500 Q": "88.7 (2)",
         "Acc 2k Q": "87.45 (1)",
         "Acc 10k Q": "84.77 (1)"
@@ -93,63 +120,36 @@
         "Company": "Meta",
         "Size": "8B",
         "License": "Unknown",
-        "Acc 80 Q": null,
+        "Acc 80 Q": "86.04 (6)",
         "Acc 500 Q": "80.6 (2)",
         "Acc 2k Q": "81.0 (1)",
         "Acc 10k Q": "78.4 (1)"
     },
     "open-mixtral-8x22b": {
         "Company": "Mistral AI",
-        "Size": "N/A",
+        "Size": "141B",
         "License": "Unknown",
         "Acc 80 Q": "95.0 (1)",
         "Acc 500 Q": "87.8 (1)",
         "Acc 2k Q": "88.45 (1)",
         "Acc 10k Q": "85.27 (1)"
     },
-    "gemma2:9b": {
-        "Company": "Google",
-        "Size": "9B",
-        "License": "Unknown",
-        "Acc 80 Q": null,
-        "Acc 500 Q": "86.8 (3)",
-        "Acc 2k Q": "84.97 (2)",
-        "Acc 10k Q": "83.23 (2)"
-    },
     "open-mixtral-8x7b": {
         "Company": "Mistral AI",
-        "Size": "N/A",
+        "Size": "47B",
         "License": "Unknown",
         "Acc 80 Q": "91.25 (1)",
         "Acc 500 Q": "86.2 (1)",
         "Acc 2k Q": "85.65 (1)",
         "Acc 10k Q": "82.4 (1)"
     },
-    "phi3:medium": {
-        "Company": "Microsoft",
-        "Size": "N/A",
-        "License": "Unknown",
-        "Acc 80 Q": null,
-        "Acc 500 Q": "89.1 (2)",
-        "Acc 2k Q": "85.75 (1)",
-        "Acc 10k Q": "84.07 (1)"
-    },
     "mistral:7b": {
         "Company": "Mistral AI",
         "Size": "7B",
         "License": "Unknown",
-        "Acc 80 Q": null,
+        "Acc 80 Q": "75.0 (6)",
         "Acc 500 Q": "75.1 (2)",
         "Acc 2k Q": "72.55 (1)",
         "Acc 10k Q": "72.2 (1)"
-    },
-    "llama3:70b": {
-        "Company": "Meta",
-        "Size": "70B",
-        "License": "Unknown",
-        "Acc 80 Q": null,
-        "Acc 500 Q": "90.2 (1)",
-        "Acc 2k Q": "88.85 (1)",
-        "Acc 10k Q": null
     }
 }

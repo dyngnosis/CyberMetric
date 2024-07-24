@@ -136,6 +136,8 @@ async def main():
     file_paths = ['questions/CyberMetric-80-v1.json', 'questions/CyberMetric-500-v1.json', 'questions/CyberMetric-2000-v1.json', 'questions/CyberMetric-10000-v1.json']
     #file_paths = ['questions/CyberMetric-80-v1.json', 'questions/CyberMetric-500-v1.json']#, 'CyberMetric-2000-v1.json']
     model_ids = ["gpt-4o", "gpt-4o-mini"]
+    model_ids = ["gpt-4o-mini"]
+
     
     for file_path in file_paths:
         for model_id in model_ids:

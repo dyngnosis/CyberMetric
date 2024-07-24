@@ -299,6 +299,109 @@
     }
   },
   {
+    "question": "What is the essential requirement for the security of the Discrete Logarithm Integrated Encryption Scheme (DLIES) to be maintained?",
+    "overall_failure_rate": 100.0,
+    "total_attempts": {
+      "gpt-4o": 8,
+      "llama3.1:70b": 16,
+      "llama3.1:8b": 15,
+      "mistral-large-2402": 4,
+      "qwen2:7b": 3,
+      "claude-3-5-sonnet-20240620": 5,
+      "gpt-4o-mini": 6,
+      "qwen2:72b": 3,
+      "mixtral:8x7b": 4,
+      "gemma2:27b": 4,
+      "llama3:8b": 5,
+      "open-mixtral-8x22b": 4,
+      "gemma2:9b": 9,
+      "open-mixtral-8x7b": 4,
+      "phi3:medium": 5,
+      "mistral:7b": 5,
+      "llama3:70b": 2
+    },
+    "incorrect_attempts": {
+      "gpt-4o": 8,
+      "llama3.1:70b": 16,
+      "llama3.1:8b": 15,
+      "mistral-large-2402": 4,
+      "qwen2:7b": 3,
+      "claude-3-5-sonnet-20240620": 5,
+      "gpt-4o-mini": 6,
+      "qwen2:72b": 3,
+      "mixtral:8x7b": 4,
+      "gemma2:27b": 4,
+      "llama3:8b": 5,
+      "open-mixtral-8x22b": 4,
+      "gemma2:9b": 9,
+      "open-mixtral-8x7b": 4,
+      "phi3:medium": 5,
+      "mistral:7b": 5,
+      "llama3:70b": 2
+    },
+    "null_answers": {},
+    "models_failed_count": 17,
+    "correct_answer": "C",
+    "selected_answers": {
+      "gpt-4o": {
+        "A": 8
+      },
+      "llama3.1:70b": {
+        "D": 13,
+        "A": 3
+      },
+      "llama3.1:8b": {
+        "D": 13,
+        "A": 2
+      },
+      "mistral-large-2402": {
+        "A": 4
+      },
+      "qwen2:7b": {
+        "D": 3
+      },
+      "claude-3-5-sonnet-20240620": {
+        "A": 5
+      },
+      "gpt-4o-mini": {
+        "D": 2,
+        "A": 4
+      },
+      "qwen2:72b": {
+        "A": 3
+      },
+      "mixtral:8x7b": {
+        "D": 4
+      },
+      "gemma2:27b": {
+        "A": 4
+      },
+      "llama3:8b": {
+        "D": 2,
+        "A": 3
+      },
+      "open-mixtral-8x22b": {
+        "A": 4
+      },
+      "gemma2:9b": {
+        "D": 8,
+        "B": 1
+      },
+      "open-mixtral-8x7b": {
+        "D": 4
+      },
+      "phi3:medium": {
+        "A": 5
+      },
+      "mistral:7b": {
+        "A": 5
+      },
+      "llama3:70b": {
+        "B": 2
+      }
+    }
+  },
+  {
     "question": "Which perspective focuses on establishing security requirements of subsystems/solutions at different layers in a distributed system?",
     "overall_failure_rate": 100.0,
     "total_attempts": {
@@ -1987,112 +2090,6 @@
     }
   },
   {
-    "question": "What is the essential requirement for the security of the Discrete Logarithm Integrated Encryption Scheme (DLIES) to be maintained?",
-    "overall_failure_rate": 99.38271604938271,
-    "total_attempts": {
-      "gpt-4o": 8,
-      "llama3.1:70b": 21,
-      "llama3.1:8b": 20,
-      "gemma2:9b": 19,
-      "phi3:medium": 10,
-      "mistral-large-2402": 4,
-      "llama3:70b": 7,
-      "qwen2:7b": 8,
-      "claude-3-5-sonnet-20240620": 5,
-      "gpt-4o-mini": 6,
-      "qwen2:72b": 8,
-      "mixtral:8x7b": 9,
-      "gemma2:27b": 9,
-      "llama3:8b": 10,
-      "open-mixtral-8x22b": 4,
-      "open-mixtral-8x7b": 4,
-      "mistral:7b": 10
-    },
-    "incorrect_attempts": {
-      "gpt-4o": 8,
-      "llama3.1:70b": 21,
-      "llama3.1:8b": 20,
-      "gemma2:9b": 19,
-      "phi3:medium": 10,
-      "mistral-large-2402": 4,
-      "llama3:70b": 7,
-      "qwen2:7b": 8,
-      "claude-3-5-sonnet-20240620": 5,
-      "gpt-4o-mini": 6,
-      "qwen2:72b": 8,
-      "mixtral:8x7b": 9,
-      "gemma2:27b": 8,
-      "llama3:8b": 10,
-      "open-mixtral-8x22b": 4,
-      "open-mixtral-8x7b": 4,
-      "mistral:7b": 10
-    },
-    "null_answers": {},
-    "models_failed_count": 17,
-    "correct_answer": "C",
-    "selected_answers": {
-      "gpt-4o": {
-        "A": 8
-      },
-      "llama3.1:70b": {
-        "D": 15,
-        "A": 6
-      },
-      "llama3.1:8b": {
-        "D": 17,
-        "A": 3
-      },
-      "gemma2:9b": {
-        "D": 18,
-        "B": 1
-      },
-      "phi3:medium": {
-        "A": 10
-      },
-      "mistral-large-2402": {
-        "A": 4
-      },
-      "llama3:70b": {
-        "A": 1,
-        "B": 6
-      },
-      "qwen2:7b": {
-        "D": 8
-      },
-      "claude-3-5-sonnet-20240620": {
-        "A": 5
-      },
-      "gpt-4o-mini": {
-        "D": 2,
-        "A": 4
-      },
-      "qwen2:72b": {
-        "A": 7,
-        "D": 1
-      },
-      "mixtral:8x7b": {
-        "D": 9
-      },
-      "gemma2:27b": {
-        "A": 8,
-        "C": 1
-      },
-      "llama3:8b": {
-        "D": 4,
-        "A": 6
-      },
-      "open-mixtral-8x22b": {
-        "A": 4
-      },
-      "open-mixtral-8x7b": {
-        "D": 4
-      },
-      "mistral:7b": {
-        "A": 10
-      }
-    }
-  },
-  {
     "question": "Which security mode requires users to have a clearance or authorization for all information processed by the system, allowing the system to handle multiple classification levels?",
     "overall_failure_rate": 97.82608695652173,
     "total_attempts": {
@@ -3185,44 +3182,44 @@
   },
   {
     "question": "Who is responsible for implementing the organization's planning, budgeting, and performance, including its information security components?",
-    "overall_failure_rate": 75.30864197530865,
+    "overall_failure_rate": 69.6078431372549,
     "total_attempts": {
       "gpt-4o": 8,
-      "llama3.1:70b": 21,
-      "llama3.1:8b": 20,
-      "gemma2:9b": 19,
-      "phi3:medium": 10,
+      "llama3.1:70b": 16,
+      "llama3.1:8b": 15,
       "mistral-large-2402": 4,
-      "llama3:70b": 7,
-      "qwen2:7b": 8,
+      "qwen2:7b": 3,
       "claude-3-5-sonnet-20240620": 5,
       "gpt-4o-mini": 6,
-      "qwen2:72b": 8,
-      "mixtral:8x7b": 9,
-      "gemma2:27b": 9,
-      "llama3:8b": 10,
+      "qwen2:72b": 3,
+      "mixtral:8x7b": 4,
+      "gemma2:27b": 4,
+      "llama3:8b": 5,
       "open-mixtral-8x22b": 4,
+      "gemma2:9b": 9,
       "open-mixtral-8x7b": 4,
-      "mistral:7b": 10
+      "phi3:medium": 5,
+      "mistral:7b": 5,
+      "llama3:70b": 2
     },
     "incorrect_attempts": {
-      "llama3.1:70b": 19,
-      "llama3.1:8b": 17,
-      "gemma2:9b": 15,
+      "llama3.1:70b": 14,
+      "llama3.1:8b": 12,
       "mistral-large-2402": 4,
-      "llama3:70b": 7,
       "claude-3-5-sonnet-20240620": 5,
-      "qwen2:72b": 6,
-      "mixtral:8x7b": 9,
-      "gemma2:27b": 6,
-      "llama3:8b": 8,
-      "phi3:medium": 4,
+      "qwen2:72b": 1,
+      "mixtral:8x7b": 4,
+      "gemma2:27b": 2,
+      "llama3:8b": 3,
       "open-mixtral-8x22b": 4,
       "open-mixtral-8x7b": 4,
-      "mistral:7b": 9,
+      "phi3:medium": 2,
+      "mistral:7b": 4,
       "qwen2:7b": 1,
+      "llama3:70b": 2,
       "gpt-4o": 3,
-      "gpt-4o-mini": 1
+      "gpt-4o-mini": 1,
+      "gemma2:9b": 5
     },
     "null_answers": {},
     "models_failed_count": 17,
@@ -3233,32 +3230,20 @@
         "D": 3
       },
       "llama3.1:70b": {
-        "D": 16,
+        "D": 11,
         "B": 5
       },
       "llama3.1:8b": {
-        "D": 16,
+        "D": 12,
         "B": 1,
-        "C": 3
-      },
-      "gemma2:9b": {
-        "D": 19
-      },
-      "phi3:medium": {
-        "B": 4,
-        "D": 6
+        "C": 2
       },
       "mistral-large-2402": {
         "D": 2,
         "B": 2
       },
-      "llama3:70b": {
-        "D": 6,
-        "B": 1
-      },
       "qwen2:7b": {
         "D": 2,
-        "B": 5,
         "C": 1
       },
       "claude-3-5-sonnet-20240620": {
@@ -3271,21 +3256,19 @@
         "D": 1
       },
       "qwen2:72b": {
-        "C": 6,
+        "C": 1,
         "D": 2
       },
       "mixtral:8x7b": {
-        "D": 5,
-        "B": 2,
-        "C": 2
+        "D": 2,
+        "B": 2
       },
       "gemma2:27b": {
-        "D": 8,
-        "B": 1
+        "D": 4
       },
       "llama3:8b": {
         "A": 1,
-        "C": 7,
+        "C": 2,
         "B": 1,
         "D": 1
       },
@@ -3293,13 +3276,24 @@
         "B": 2,
         "D": 2
       },
+      "gemma2:9b": {
+        "D": 9
+      },
       "open-mixtral-8x7b": {
         "C": 3,
         "B": 1
       },
+      "phi3:medium": {
+        "D": 4,
+        "B": 1
+      },
       "mistral:7b": {
-        "D": 8,
-        "A": 2
+        "A": 2,
+        "D": 3
+      },
+      "llama3:70b": {
+        "B": 1,
+        "D": 1
       }
     }
   },
@@ -24600,43 +24594,43 @@
   },
   {
     "question": "Which document provides the recommendation for elliptic curve cryptography?",
-    "overall_failure_rate": 91.42857142857143,
+    "overall_failure_rate": 90.0,
     "total_attempts": {
       "gpt-4o": 7,
-      "llama3.1:70b": 18,
-      "llama3.1:8b": 18,
-      "gemma2:9b": 17,
-      "phi3:medium": 9,
+      "llama3.1:70b": 13,
+      "llama3.1:8b": 13,
       "mistral-large-2402": 3,
-      "llama3:70b": 6,
       "claude-3-5-sonnet-20240620": 3,
       "gpt-4o-mini": 5,
-      "qwen2:72b": 7,
-      "mixtral:8x7b": 8,
-      "gemma2:27b": 8,
-      "llama3:8b": 9,
-      "qwen2:7b": 7,
+      "qwen2:72b": 2,
+      "mixtral:8x7b": 3,
+      "gemma2:27b": 3,
+      "llama3:8b": 4,
+      "qwen2:7b": 2,
       "open-mixtral-8x7b": 3,
-      "mistral:7b": 9,
-      "open-mixtral-8x22b": 3
+      "open-mixtral-8x22b": 3,
+      "phi3:medium": 4,
+      "mistral:7b": 4,
+      "gemma2:9b": 7,
+      "llama3:70b": 1
     },
     "incorrect_attempts": {
       "gpt-4o": 6,
-      "llama3.1:70b": 18,
-      "llama3.1:8b": 18,
-      "gemma2:9b": 15,
-      "phi3:medium": 7,
+      "llama3.1:70b": 13,
+      "llama3.1:8b": 13,
       "mistral-large-2402": 2,
       "gpt-4o-mini": 5,
-      "qwen2:72b": 7,
-      "llama3:70b": 3,
-      "mixtral:8x7b": 8,
-      "gemma2:27b": 8,
-      "llama3:8b": 9,
-      "qwen2:7b": 7,
+      "qwen2:72b": 2,
+      "mixtral:8x7b": 3,
+      "gemma2:27b": 3,
+      "llama3:8b": 4,
+      "qwen2:7b": 2,
       "open-mixtral-8x7b": 3,
-      "mistral:7b": 9,
-      "open-mixtral-8x22b": 3
+      "open-mixtral-8x22b": 3,
+      "phi3:medium": 3,
+      "mistral:7b": 4,
+      "gemma2:9b": 5,
+      "llama3:70b": 1
     },
     "null_answers": {},
     "models_failed_count": 16,
@@ -24648,27 +24642,15 @@
         "A": 2
       },
       "llama3.1:70b": {
-        "C": 13,
-        "A": 5
+        "C": 10,
+        "A": 3
       },
       "llama3.1:8b": {
-        "A": 18
-      },
-      "gemma2:9b": {
-        "A": 15,
-        "D": 2
-      },
-      "phi3:medium": {
-        "A": 7,
-        "D": 2
+        "A": 13
       },
       "mistral-large-2402": {
         "A": 2,
         "D": 1
-      },
-      "llama3:70b": {
-        "D": 3,
-        "C": 3
       },
       "claude-3-5-sonnet-20240620": {
         "D": 3
@@ -24678,29 +24660,40 @@
         "C": 2
       },
       "qwen2:72b": {
-        "A": 7
+        "A": 2
       },
       "mixtral:8x7b": {
-        "C": 8
+        "C": 3
       },
       "gemma2:27b": {
-        "A": 8
+        "A": 3
       },
       "llama3:8b": {
-        "A": 9
+        "A": 4
       },
       "qwen2:7b": {
-        "A": 6,
-        "C": 1
+        "C": 1,
+        "A": 1
       },
       "open-mixtral-8x7b": {
         "C": 3
       },
-      "mistral:7b": {
-        "A": 9
-      },
       "open-mixtral-8x22b": {
         "A": 2,
+        "C": 1
+      },
+      "phi3:medium": {
+        "A": 3,
+        "D": 1
+      },
+      "mistral:7b": {
+        "A": 4
+      },
+      "gemma2:9b": {
+        "A": 5,
+        "D": 2
+      },
+      "llama3:70b": {
         "C": 1
       }
     }
@@ -41097,119 +41090,6 @@
     }
   },
   {
-    "question": "If you were to see the subnet mask 255.255.248.0, what CIDR notation (prefix) would you use to indicate the same thing?",
-    "overall_failure_rate": 62.34567901234568,
-    "total_attempts": {
-      "gpt-4o": 8,
-      "llama3.1:70b": 21,
-      "llama3.1:8b": 20,
-      "gemma2:9b": 19,
-      "phi3:medium": 10,
-      "mistral-large-2402": 4,
-      "llama3:70b": 7,
-      "qwen2:7b": 8,
-      "claude-3-5-sonnet-20240620": 5,
-      "gpt-4o-mini": 6,
-      "qwen2:72b": 8,
-      "mixtral:8x7b": 9,
-      "gemma2:27b": 9,
-      "llama3:8b": 10,
-      "open-mixtral-8x22b": 4,
-      "open-mixtral-8x7b": 4,
-      "mistral:7b": 10
-    },
-    "incorrect_attempts": {
-      "llama3.1:8b": 18,
-      "gemma2:9b": 18,
-      "phi3:medium": 10,
-      "llama3.1:70b": 4,
-      "qwen2:7b": 6,
-      "mixtral:8x7b": 3,
-      "gemma2:27b": 9,
-      "llama3:8b": 10,
-      "mistral-large-2402": 3,
-      "open-mixtral-8x22b": 2,
-      "mistral:7b": 10,
-      "open-mixtral-8x7b": 2,
-      "claude-3-5-sonnet-20240620": 3,
-      "gpt-4o-mini": 1,
-      "qwen2:72b": 2
-    },
-    "null_answers": {},
-    "models_failed_count": 15,
-    "correct_answer": "D",
-    "selected_answers": {
-      "gpt-4o": {
-        "C": 6,
-        "D": 2
-      },
-      "llama3.1:70b": {
-        "C": 12,
-        "D": 8,
-        "B": 1
-      },
-      "llama3.1:8b": {
-        "B": 7,
-        "A": 9,
-        "C": 4
-      },
-      "gemma2:9b": {
-        "B": 16,
-        "A": 2,
-        "D": 1
-      },
-      "phi3:medium": {
-        "A": 10
-      },
-      "mistral-large-2402": {
-        "C": 1,
-        "B": 3
-      },
-      "llama3:70b": {
-        "C": 6,
-        "D": 1
-      },
-      "qwen2:7b": {
-        "B": 6,
-        "C": 2
-      },
-      "claude-3-5-sonnet-20240620": {
-        "C": 5
-      },
-      "gpt-4o-mini": {
-        "C": 3,
-        "B": 1,
-        "D": 2
-      },
-      "qwen2:72b": {
-        "C": 8
-      },
-      "mixtral:8x7b": {
-        "C": 4,
-        "B": 1,
-        "D": 2,
-        "A": 2
-      },
-      "gemma2:27b": {
-        "A": 9
-      },
-      "llama3:8b": {
-        "A": 4,
-        "B": 6
-      },
-      "open-mixtral-8x22b": {
-        "C": 4
-      },
-      "open-mixtral-8x7b": {
-        "D": 3,
-        "B": 1
-      },
-      "mistral:7b": {
-        "B": 10
-      }
-    }
-  },
-  {
     "question": "What is the equal error rate typically for fielded fingerprint biometric systems?",
     "overall_failure_rate": 88.88888888888889,
     "total_attempts": {
@@ -53025,6 +52905,116 @@
       },
       "qwen2:72b": {
         "C": 2
+      }
+    }
+  },
+  {
+    "question": "If you were to see the subnet mask 255.255.248.0, what CIDR notation (prefix) would you use to indicate the same thing?",
+    "overall_failure_rate": 59.80392156862745,
+    "total_attempts": {
+      "gpt-4o": 8,
+      "llama3.1:70b": 16,
+      "llama3.1:8b": 15,
+      "mistral-large-2402": 4,
+      "qwen2:7b": 3,
+      "claude-3-5-sonnet-20240620": 5,
+      "gpt-4o-mini": 6,
+      "qwen2:72b": 3,
+      "mixtral:8x7b": 4,
+      "gemma2:27b": 4,
+      "llama3:8b": 5,
+      "open-mixtral-8x22b": 4,
+      "gemma2:9b": 9,
+      "open-mixtral-8x7b": 4,
+      "phi3:medium": 5,
+      "mistral:7b": 5,
+      "llama3:70b": 2
+    },
+    "incorrect_attempts": {
+      "llama3.1:8b": 15,
+      "llama3.1:70b": 4,
+      "qwen2:7b": 2,
+      "gemma2:27b": 4,
+      "llama3:8b": 5,
+      "mistral-large-2402": 3,
+      "open-mixtral-8x22b": 2,
+      "gemma2:9b": 8,
+      "open-mixtral-8x7b": 2,
+      "phi3:medium": 5,
+      "mistral:7b": 5,
+      "claude-3-5-sonnet-20240620": 3,
+      "gpt-4o-mini": 1,
+      "qwen2:72b": 2
+    },
+    "null_answers": {},
+    "models_failed_count": 14,
+    "correct_answer": "D",
+    "selected_answers": {
+      "gpt-4o": {
+        "C": 6,
+        "D": 2
+      },
+      "llama3.1:70b": {
+        "C": 7,
+        "D": 8,
+        "B": 1
+      },
+      "llama3.1:8b": {
+        "B": 6,
+        "A": 7,
+        "C": 2
+      },
+      "mistral-large-2402": {
+        "C": 1,
+        "B": 3
+      },
+      "qwen2:7b": {
+        "B": 2,
+        "C": 1
+      },
+      "claude-3-5-sonnet-20240620": {
+        "C": 5
+      },
+      "gpt-4o-mini": {
+        "C": 3,
+        "B": 1,
+        "D": 2
+      },
+      "qwen2:72b": {
+        "C": 3
+      },
+      "mixtral:8x7b": {
+        "C": 2,
+        "D": 2
+      },
+      "gemma2:27b": {
+        "A": 4
+      },
+      "llama3:8b": {
+        "A": 2,
+        "B": 3
+      },
+      "open-mixtral-8x22b": {
+        "C": 4
+      },
+      "gemma2:9b": {
+        "B": 7,
+        "A": 1,
+        "D": 1
+      },
+      "open-mixtral-8x7b": {
+        "D": 3,
+        "B": 1
+      },
+      "phi3:medium": {
+        "A": 5
+      },
+      "mistral:7b": {
+        "B": 5
+      },
+      "llama3:70b": {
+        "D": 1,
+        "C": 1
       }
     }
   },

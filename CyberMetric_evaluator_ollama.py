@@ -114,37 +114,38 @@ class AsyncOllamaCyberMetricEvaluator:
         incorrect_answers = []
         all_results = []
         
-        with tqdm(total=len(questions_data), desc="Processing Questions") as progress_bar:
+        with tqdm(total=len(questions_data), desc=f"Processing Questions ({self.model_name})") as progress_bar:
             tasks = [self.process_question(item, progress_bar, correct_count, incorrect_answers) for item in questions_data]
             all_results = await asyncio.gather(*tasks)
         
         accuracy = len(correct_count) / len(questions_data) * 100
-        print(f"Final Accuracy: {accuracy:.2f}%")
+        print(f"Final Accuracy for {self.model_name}: {accuracy:.2f}%")
         
         self.save_json_report(all_results, accuracy)
         
         if incorrect_answers:
-            print("\nIncorrect Answers:")
+            print(f"\nIncorrect Answers for {self.model_name}:")
             for item in incorrect_answers:
                 print(f"Question: {item['question']}")
                 print(f"Expected Answer: {item['correct_answer']}, LLM Answer: {item['llm_answer']}\n")
+
 async def main():
     file_paths = ['questions/CyberMetric-500-v1.json', 'questions/CyberMetric-2000-v1.json', 'questions/CyberMetric-10000-v1.json']
+    file_paths = ['questions/CyberMetric-10000-v1.json']
     model_names = [
-    "gemma2:9b",
-    "phi3:medium",
-    "mistral:7b",
-    "qwen2:7b",
-    "llama3:8b",
-    "llama3.1:8b",
-    "gemma2:9b",
-    "gemma2:27b",
-    "mixtral:8x7b",
-    "qwen2:72b",
-    "llama3:70b",
-    "llama3.1:70b"
-]
-
+        # "gemma2:9b",
+        # "phi3:medium",
+        # "mistral:7b",
+        # "qwen2:7b",
+        # "llama3:8b",
+        # "llama3.1:8b",
+        # "gemma2:9b",
+        # "gemma2:27b",
+        # "mixtral:8x7b",
+        # "qwen2:72b",
+        "llama3:70b",
+        # "llama3.1:70b"
+    ]
 
     for i in range(1, 30):
         for file_path in file_paths:

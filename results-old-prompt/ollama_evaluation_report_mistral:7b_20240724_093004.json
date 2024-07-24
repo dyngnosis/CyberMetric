@@ -1,0 +1,489 @@
+{
+  "timestamp": "2024-07-24T09:30:04.273051",
+  "model_name": "mistral:7b",
+  "total_questions": 80,
+  "correct_answers": 60,
+  "accuracy": 75.0,
+  "results": [
+    {
+      "question": "What is the primary requirement for an Random Bit Generator's (RBG) output to be used for generating cryptographic keys?",
+      "correct_answer": "B",
+      "llm_answer": "B",
+      "is_correct": true
+    },
+    {
+      "question": "In cryptography, what is the purpose of using a key-derivation function (KDF)?",
+      "correct_answer": "D",
+      "llm_answer": "D",
+      "is_correct": true
+    },
+    {
+      "question": "What is the primary purpose of segmentation in the context of PCI DSS?",
+      "correct_answer": "B",
+      "llm_answer": "B",
+      "is_correct": true
+    },
+    {
+      "question": "What is the purpose of using strong cryptography to protect cardholder data during transmission over open, public networks?",
+      "correct_answer": "A",
+      "llm_answer": "A",
+      "is_correct": true
+    },
+    {
+      "question": "What is the purpose of periodic reviews of user accounts and access privileges?",
+      "correct_answer": "D",
+      "llm_answer": "D",
+      "is_correct": true
+    },
+    {
+      "question": "Which of the following is a purpose of having synchronized system clocks?",
+      "correct_answer": "A",
+      "llm_answer": "A",
+      "is_correct": true
+    },
+    {
+      "question": "What is physical security?",
+      "correct_answer": "B",
+      "llm_answer": "B",
+      "is_correct": true
+    },
+    {
+      "question": "What does the abbreviation 'SDK' stand for in the context of software security?",
+      "correct_answer": "A",
+      "llm_answer": "A",
+      "is_correct": true
+    },
+    {
+      "question": "What is the main purpose of multi-factor authentication in cybersecurity?",
+      "correct_answer": "C",
+      "llm_answer": "C",
+      "is_correct": true
+    },
+    {
+      "question": "What is the primary objective of a Web Application Firewall (WAF) in cybersecurity?",
+      "correct_answer": "C",
+      "llm_answer": "C",
+      "is_correct": true
+    },
+    {
+      "question": "What is the purpose of periodically changing passwords or passphrases?",
+      "correct_answer": "D",
+      "llm_answer": "A",
+      "is_correct": false
+    },
+    {
+      "question": "Which of the following defines the entity’s security objectives and principles?",
+      "correct_answer": "A",
+      "llm_answer": "A",
+      "is_correct": true
+    },
+    {
+      "question": "What is the focus of a security audit or vulnerability assessment?",
+      "correct_answer": "A",
+      "llm_answer": "A",
+      "is_correct": true
+    },
+    {
+      "question": "Which of the following is a mechanism for managing digital certificates through a system of trust?",
+      "correct_answer": "A",
+      "llm_answer": "A",
+      "is_correct": true
+    },
+    {
+      "question": "Which protocol is used to create a secure environment in a wireless network?",
+      "correct_answer": "B",
+      "llm_answer": "B",
+      "is_correct": true
+    },
+    {
+      "question": "Which design concept limits access to systems from outside users while protecting users and systems inside the LAN?",
+      "correct_answer": "A",
+      "llm_answer": "B",
+      "is_correct": false
+    },
+    {
+      "question": "What is the process of making an operating system secure from attack called?",
+      "correct_answer": "A",
+      "llm_answer": "A",
+      "is_correct": true
+    },
+    {
+      "question": "Which mechanism is used by PKI to allow immediate verification of a certificate's validity?",
+      "correct_answer": "D",
+      "llm_answer": "A",
+      "is_correct": false
+    },
+    {
+      "question": "Which of the following is a major security problem with FTP?",
+      "correct_answer": "C",
+      "llm_answer": "C",
+      "is_correct": true
+    },
+    {
+      "question": "Which of the following creates a fixed-length output from a variable-length input?",
+      "correct_answer": "D",
+      "llm_answer": "D",
+      "is_correct": true
+    },
+    {
+      "question": "What is the purpose of a service-level agreement (SLA) in the context of business continuity?",
+      "correct_answer": "A",
+      "llm_answer": "A",
+      "is_correct": true
+    },
+    {
+      "question": "What does the Address Resolution Protocol (ARP) do in a network?",
+      "correct_answer": "C",
+      "llm_answer": "C",
+      "is_correct": true
+    },
+    {
+      "question": "In the OSI model, which layer consists of the physical media and infrastructure of networks?",
+      "correct_answer": "D",
+      "llm_answer": "D",
+      "is_correct": true
+    },
+    {
+      "question": "In binary representation, what is the result of the bitwise XOR operation between 110101 and 101010",
+      "correct_answer": "A",
+      "llm_answer": "A",
+      "is_correct": true
+    },
+    {
+      "question": "What is the proper sequence of the TCP three-way-handshake?",
+      "correct_answer": "B",
+      "llm_answer": "B",
+      "is_correct": true
+    },
+    {
+      "question": "Which topology has built-in redundancy because of its many client connections?",
+      "correct_answer": "D",
+      "llm_answer": "D",
+      "is_correct": true
+    },
+    {
+      "question": "How can Google hacking be valuable in a cybersecurity investigation?",
+      "correct_answer": "C",
+      "llm_answer": "C",
+      "is_correct": true
+    },
+    {
+      "question": "What is the role of the three-way handshake in establishing a TCP connection?",
+      "correct_answer": "D",
+      "llm_answer": "D",
+      "is_correct": true
+    },
+    {
+      "question": "Which best describes a vulnerability scan?",
+      "correct_answer": "D",
+      "llm_answer": "D",
+      "is_correct": true
+    },
+    {
+      "question": "What is Tor used for?",
+      "correct_answer": "A",
+      "llm_answer": "A",
+      "is_correct": true
+    },
+    {
+      "question": "What is the maximum number of IP addresses in an IPv6 subnet?",
+      "correct_answer": "D",
+      "llm_answer": "B",
+      "is_correct": false
+    },
+    {
+      "question": "Which of the following is a characteristic of a worm?",
+      "correct_answer": "B",
+      "llm_answer": "B",
+      "is_correct": true
+    },
+    {
+      "question": "What common tool can be used for launching an ARP poisoning attack?",
+      "correct_answer": "A",
+      "llm_answer": "A",
+      "is_correct": true
+    },
+    {
+      "question": "What technology is used to verify information as it is entered into a web application, preventing database manipulation and buffer overflows?",
+      "correct_answer": "A",
+      "llm_answer": "A",
+      "is_correct": true
+    },
+    {
+      "question": "Which type of firewall analyzes the status of traffic?",
+      "correct_answer": "C",
+      "llm_answer": "C",
+      "is_correct": true
+    },
+    {
+      "question": "What is the purpose of the Crossover Error Rate (CER) in rating the performance of biometric devices?",
+      "correct_answer": "B",
+      "llm_answer": "A",
+      "is_correct": false
+    },
+    {
+      "question": "What is the primary purpose of a padded cell system in relation to intrusion detection?",
+      "correct_answer": "C",
+      "llm_answer": "C",
+      "is_correct": true
+    },
+    {
+      "question": "What is the primary goal of penetration testing?",
+      "correct_answer": "A",
+      "llm_answer": "A",
+      "is_correct": true
+    },
+    {
+      "question": "What is the primary purpose of RADIUS and TACACS in a network environment?",
+      "correct_answer": "A",
+      "llm_answer": "A",
+      "is_correct": true
+    },
+    {
+      "question": "Which symmetric encryption scheme is recommended for use in SRTP?",
+      "correct_answer": "D",
+      "llm_answer": "C",
+      "is_correct": false
+    },
+    {
+      "question": "What is the essential requirement for the security of the Discrete Logarithm Integrated Encryption Scheme (DLIES) to be maintained?",
+      "correct_answer": "C",
+      "llm_answer": "A",
+      "is_correct": false
+    },
+    {
+      "question": "Which document provides the recommendation for elliptic curve cryptography?",
+      "correct_answer": "D",
+      "llm_answer": "A",
+      "is_correct": false
+    },
+    {
+      "question": "What is an essential requirement for the internal state of deterministic random number generators?",
+      "correct_answer": "A",
+      "llm_answer": "A",
+      "is_correct": true
+    },
+    {
+      "question": "Which federal government agency has responsibility for ensuring the security of government computer systems that are not used to process sensitive and/or classified information?",
+      "correct_answer": "C",
+      "llm_answer": "C",
+      "is_correct": true
+    },
+    {
+      "question": "What is the purpose of implementing monitoring systems?",
+      "correct_answer": "B",
+      "llm_answer": "A",
+      "is_correct": false
+    },
+    {
+      "question": "Which principle of cybersecurity focuses on ensuring that data is accurate and trustworthy?",
+      "correct_answer": "D",
+      "llm_answer": "D",
+      "is_correct": true
+    },
+    {
+      "question": "What is the primary goal of the Transport Layer Security (TLS) protocol?",
+      "correct_answer": "D",
+      "llm_answer": "A",
+      "is_correct": false
+    },
+    {
+      "question": "If you were to see the subnet mask 255.255.248.0, what CIDR notation (prefix) would you use to indicate the same thing?",
+      "correct_answer": "C",
+      "llm_answer": "B",
+      "is_correct": false
+    },
+    {
+      "question": "Which of the following is NOT one of the five disaster recovery plan testing types?",
+      "correct_answer": "C",
+      "llm_answer": "C",
+      "is_correct": true
+    },
+    {
+      "question": "What would be the result of sending the string AAAAAAAAAAAAAAAAA into a variable that has been allocated space for 8 bytes?",
+      "correct_answer": "C",
+      "llm_answer": "C",
+      "is_correct": true
+    },
+    {
+      "question": "Which of the following is NOT a form of computer/network surveillance?",
+      "correct_answer": "C",
+      "llm_answer": "C",
+      "is_correct": true
+    },
+    {
+      "question": "How would you calculate risk?",
+      "correct_answer": "D",
+      "llm_answer": "A",
+      "is_correct": false
+    },
+    {
+      "question": "What is the common share name used for interprocess communication?",
+      "correct_answer": "B",
+      "llm_answer": "B",
+      "is_correct": true
+    },
+    {
+      "question": "Which port is commonly used by SMB when operating over TCP without NetBIOS?",
+      "correct_answer": "D",
+      "llm_answer": "D",
+      "is_correct": true
+    },
+    {
+      "question": "Which of the following is an example of a strong password?",
+      "correct_answer": "B",
+      "llm_answer": "B",
+      "is_correct": true
+    },
+    {
+      "question": "Which access control model would be found in a firewall?",
+      "correct_answer": "D",
+      "llm_answer": "A",
+      "is_correct": false
+    },
+    {
+      "question": "What is the preferred encryption option for sending large amounts of data?",
+      "correct_answer": "A",
+      "llm_answer": "A",
+      "is_correct": true
+    },
+    {
+      "question": "Which of the following is an example of a hashing algorithm?",
+      "correct_answer": "C",
+      "llm_answer": "C",
+      "is_correct": true
+    },
+    {
+      "question": "Which RAID level is not fault tolerant?",
+      "correct_answer": "B",
+      "llm_answer": "B",
+      "is_correct": true
+    },
+    {
+      "question": "How many keys exist in a public/private key pair?",
+      "correct_answer": "B",
+      "llm_answer": "B",
+      "is_correct": true
+    },
+    {
+      "question": "What is the primary goal of an Information Security Governance strategy?",
+      "correct_answer": "B",
+      "llm_answer": "A",
+      "is_correct": false
+    },
+    {
+      "question": "What is the process of hiding text within an image called?",
+      "correct_answer": "B",
+      "llm_answer": "B",
+      "is_correct": true
+    },
+    {
+      "question": "What attack involves inserting an unauthorized person in the communication path between two users to intercept and modify packets?",
+      "correct_answer": "C",
+      "llm_answer": "C",
+      "is_correct": true
+    },
+    {
+      "question": "Who is responsible for implementing the organization's planning, budgeting, and performance, including its information security components?",
+      "correct_answer": "B",
+      "llm_answer": "D",
+      "is_correct": false
+    },
+    {
+      "question": "The primary responsibility of the information security steering committee is:",
+      "correct_answer": "B",
+      "llm_answer": "B",
+      "is_correct": true
+    },
+    {
+      "question": "According to NIST guidelines, what is a recommended practice for creating a strong password?",
+      "correct_answer": "C",
+      "llm_answer": "A",
+      "is_correct": false
+    },
+    {
+      "question": "What is the purpose of continuously improving cybersecurity guidelines and their application notes?",
+      "correct_answer": "B",
+      "llm_answer": "B",
+      "is_correct": true
+    },
+    {
+      "question": "What does DDoS stand for?",
+      "correct_answer": "B",
+      "llm_answer": "B",
+      "is_correct": true
+    },
+    {
+      "question": "Which is not a common wireless network authentication mechanism?",
+      "correct_answer": "D",
+      "llm_answer": "A",
+      "is_correct": false
+    },
+    {
+      "question": "Which technique aims to identify changes in normal routines by examining patterns of a user's activity?",
+      "correct_answer": "B",
+      "llm_answer": "B",
+      "is_correct": true
+    },
+    {
+      "question": "What is the primary purpose of conducting a risk analysis in cybersecurity?",
+      "correct_answer": "D",
+      "llm_answer": "A",
+      "is_correct": false
+    },
+    {
+      "question": "What is the primary advantage of using UDP over TCP?",
+      "correct_answer": "C",
+      "llm_answer": "C",
+      "is_correct": true
+    },
+    {
+      "question": "What does the CIA triad in cryptography emphasize?",
+      "correct_answer": "B",
+      "llm_answer": "A",
+      "is_correct": false
+    },
+    {
+      "question": "Which nmap command is used to perform a TCP SYN scan, also known as a half-open scan, to determine which ports are open on a target system?",
+      "correct_answer": "D",
+      "llm_answer": "C",
+      "is_correct": false
+    },
+    {
+      "question": "What is the primary purpose of business continuity plans?",
+      "correct_answer": "C",
+      "llm_answer": "C",
+      "is_correct": true
+    },
+    {
+      "question": "Which DoS attack sends large amounts of ICMP Echo traffic to a broadcast IP address with a spoofed source address of a victim?",
+      "correct_answer": "A",
+      "llm_answer": "A",
+      "is_correct": true
+    },
+    {
+      "question": "Which of the following tools is commonly used for network packet analysis and troubleshooting?",
+      "correct_answer": "A",
+      "llm_answer": "A",
+      "is_correct": true
+    },
+    {
+      "question": "In the context of encrypting data for secure communication, which encryption algorithm is typically preferred for its speed and efficiency?",
+      "correct_answer": "B",
+      "llm_answer": "B",
+      "is_correct": true
+    },
+    {
+      "question": "What is the purpose of NOP sleds in buffer overflow exploits?",
+      "correct_answer": "C",
+      "llm_answer": "C",
+      "is_correct": true
+    },
+    {
+      "question": "Which security feature can help prevent buffer overflow attacks by marking certain memory regions as non-executable?",
+      "correct_answer": "A",
+      "llm_answer": "A",
+      "is_correct": true
+    }
+  ]
+}

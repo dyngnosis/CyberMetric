@@ -19,11 +19,13 @@ companies_models = {
 }
 
 hard_coded_sizes = {
-    "open-mixtral-8x7b": "47B",
+    "open-mixtral-8x7b": "47B", # 47B total with 13B active: https://mistral.ai/news/mixtral-8x22b/
+    "gpt-40": "> 175B", # https://aimlapi.com/comparisons/claude-sonnet-3-5-vs-chatgpt-4o
+    "phi3:medium": "14B", # https://ollama.com/library/phi3:14b
     "mixtral:8x7b": "47B",
-    "gpt-4o": "~200B",
-    "claude-3-5-sonnet-20240620": "~70B",
-    "claude-3-haiku-20240307": "~20B"
+    "claude-3-5-sonnet-20240620": "N/A",
+    "open-mixtral-8x22b": "141B", # 141B total with 39B active https://mistral.ai/news/mixtral-8x22b/
+    "mixtral:8x22b": "141B", # 141B total with 39B active https://mistral.ai/news/mixtral-8x22b/
 }
 
 # Initialize an empty dictionary to dynamically build the leaderboard
@@ -38,9 +40,15 @@ def get_company_from_model_id(model_id):
 
 # Function to extract size from model ID
 def get_size_from_model_id(model_id):
+    # Check the hard coded sizes dictionary first
+    if model_id in hard_coded_sizes:
+        return hard_coded_sizes[model_id]
+    
+    # If not found, try to extract size from model ID
     match = re.search(r':(\d+[bB])$', model_id)
     if match:
         return match.group(1).upper()
+    
     return "N/A"
 
 # Parse command line arguments
@@ -106,7 +114,7 @@ with open(output_file, 'w') as outfile:
 leaderboard_df = pd.DataFrame(leaderboard).transpose()
 
 # Order the table by highest average accuracy in the Q500 column
-leaderboard_df.sort_values(by="Acc 500 Q", ascending=False, inplace=True)
+leaderboard_df.sort_values(by="Acc 2k Q", ascending=False, inplace=True)
 
 # Define the color map for the background based on value ranges
 def color_map(val):
